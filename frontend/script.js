@@ -62,7 +62,7 @@ function createContent(type) {
 
   async function postRequestApi(word,keyword){
 
-    let res = await fetch("https://enchanting-bkd.onrender.com/ask",{
+    let res = await fetch("https://real-rose-squid-kit.cyclic.app/ask",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -79,3 +79,12 @@ function createContent(type) {
      output.innerHTML = null
      output.innerText = message
   }
+
+
+
+
+
+
+
+
+  "https://enchanting-bkd.onrender.com/ask"
