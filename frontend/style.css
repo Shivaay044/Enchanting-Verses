@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fade-in 1s ease-in;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    margin-top: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: slide-in-bottom 1s ease-in;
+  }
+  
+  @keyframes slide-in-bottom {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  .options button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f6d365;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .options button.active {
+    background-color: #83fd4f;
+  }
+  
+  
+  @keyframes scale-in {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .options button:hover {
+    background-color: #ffb347;
+  }
+  
+  #output {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    animation: slide-in-left 1s ease-in;
+  }
+  
+  #output span {
+    display: inline-block;
+    animation: rainbow-text 2s linear infinite;
+  }
+  
+  @keyframes rainbow-text {
+    0% {
+      color: #ff0000; /* Red */
+    }
+    14% {
+      color: #ff7f00; /* Orange */
+    }
+    28% {
+      color: #ffff00; /* Yellow */
+    }
+    42% {
+      color: #00ff00; /* Green */
+    }
+    57% {
+      color: #0000ff; /* Blue */
+    }
+    71% {
+      color: #4b0082; /* Indigo */
+    }
+    85% {
+      color: #8f00ff; /* Violet */
+    }
+    100% {
+      color: #ff0000; /* Red */
+    }
+  }
+  
+  .user-input {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide-in-top 1s ease-in;
+  }
+  
+  @keyframes slide-in-top {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .user-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .user-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f6d365;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .user-input button:hover {
+    background-color: #ffb347;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .options button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    #output {
+      font-size: 14px;
+    }
+  
+    .user-input input {
+      font-size: 14px;
+    }
+  
+    .user-input button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
