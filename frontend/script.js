@@ -48,9 +48,10 @@ function createContent(type) {
         alert("Select what you want to generate!")
         return
     }
-    // if(userInput==""||userInput==undefined){
-    //     alert("please fill a valid input")
-    // }
+    if(userInput==""||userInput==undefined){
+        alert("please fill a valid input")
+        return
+    }
 
     
     postRequestApi(content,userInput.value)
@@ -61,7 +62,7 @@ function createContent(type) {
 
   async function postRequestApi(word,keyword){
 
-    let res = await fetch("http://localhost:5000/ask",{
+    let res = await fetch("https://enchanting-bkd.onrender.com/ask",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
